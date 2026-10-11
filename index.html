@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Expense Tracker</h1>
+        <p>Manage your daily expenses easily.</p>
+
+        
+            
+<div class="summary">
+    <h3>Monthly Budget</h3>
+    <input type="number" id="budget" placeholder="Enter your budget (₹)" min="0">
+    <button type="button" id="save-budget">Save Budget</button>
+    <h3>Remaining Balance</h3>
+    <h2 id="remaining">₹0.00</h2>
+</div>
+
+            <h3>Total Expenses</h3>
+            <h2 id="total">₹0</h2>
+        </div>
+
+        <form id="expense-form">
+            <input type="text" id="name"
+                   placeholder="Expense name" required>
+
+            <input type="number" id="amount"
+                   placeholder="Amount (₹)" min="0.01"
+                   step="0.01" required>
+
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Education">Education</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h2>Expense History</h2>
+        <canvas id="expenseChart"></canvas>
+        <ul id="expense-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

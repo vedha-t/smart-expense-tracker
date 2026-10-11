@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fc;
+    margin: 0;
+    padding: 25px 15px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px #0f172a12;
+}
+
+h1 {
+    text-align: center;
+    color: #176b55;
+    margin-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    color: #64748b;
+}
+
+.summary {
+    background: #e6f7ef;
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.summary h2 {
+    color: #176b55;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 25px 0;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    border: 1px solid #dbe2ea;
+    border-radius: 9px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #86cdb3;
+}
+
+button {
+    background: #176b55;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #105440;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    width: auto;
+    background: #dc3545;
+    padding: 9px 13px;
+}
+
+li button:hover {
+    background: #b91c1c;
+}
+
+#expenseChart {
+    max-width: 450px;
+    max-height: 350px;
+    margin: 20px auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+        margin: 5px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    li {
+        align-items: flex-start;
+    }
+}
